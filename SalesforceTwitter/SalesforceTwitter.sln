@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceTwitter", "SalesforceTwitter\SalesforceTwitter.csproj", "{DF0D4408-5212-45E9-88E0-405E09DE892C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesforceTwitter.Tests", "SalesforceTwitter.Tests\SalesforceTwitter.Tests.csproj", "{0482CABA-5748-45EF-B54F-6DD6C7FC2637}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF0D4408-5212-45E9-88E0-405E09DE892C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0D4408-5212-45E9-88E0-405E09DE892C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0D4408-5212-45E9-88E0-405E09DE892C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0D4408-5212-45E9-88E0-405E09DE892C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0482CABA-5748-45EF-B54F-6DD6C7FC2637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0482CABA-5748-45EF-B54F-6DD6C7FC2637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0482CABA-5748-45EF-B54F-6DD6C7FC2637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0482CABA-5748-45EF-B54F-6DD6C7FC2637}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<SalesforceTwitter.Models.TweetsItem>
+
+@{
+	ViewBag.Title = "SalesforceTwitter";
+
+}
+
+<h2>Twitter feed by Salesforce</h2>
+
+<ul class="list-unstyled" id="TweetList">
+	@foreach (var item in Model)
+	{
+		<li>
+			<table class="table table-responsive" style="width:60%;border:0;" border="0" >
+				<tr><td ><img src="@Url.Content(item.UserImageUrl)"  style="width:50px;height:50px;" /></td><td>
+					 <table>
+						 <tr>
+							 <td><b>@Html.DisplayFor(modelItem => item.UserName)</b> @@ @Html.DisplayFor(modelItem => item.ScreenName)</td>
+						 </tr>
+					<tr>
+						<td>@Html.Raw(HttpUtility.HtmlDecode(item.Text))</td>
+					</tr>
+					<tr>
+						@if (item.TweetImage.Length > 0)
+						{
+							<td><img src="@Url.Content(item.TweetImage)" class="img-responsive"  style="width:100%;"/> </td>
+							
+						}
+
+					</tr>
+					<tr>
+						<td >&nbsp;<span class="glyphicon glyphicon-retweet"></span>&nbsp; 
+						@Html.DisplayFor(modelItem => item.RetweetCount)&nbsp;&nbsp; 
+						<span class="glyphicon glyphicon-heart-empty"></span>&nbsp;
+						@Html.DisplayFor(modelItem => item.FavoriteCount)&nbsp;&nbsp;
+						@Html.Raw(HttpUtility.HtmlDecode(item.TweetDate))</td>
+
+					</tr>
+					
+					 </table>
+					 </td></tr>
+			</table>
+		</li>
+	}
+	
+</ul>
